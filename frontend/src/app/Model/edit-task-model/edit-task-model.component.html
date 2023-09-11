@@ -1,0 +1,17 @@
+<h2>Edit Task</h2>
+<form [formGroup]="edittaskmodel">
+  <mat-form-field>
+    <input matInput placeholder="Title" formControlName="title" name="title">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput matInput placeholder="Description" formControlName="description" name="description" rows="4"></textarea>
+  </mat-form-field>
+
+</form>
+<mat-dialog-actions>
+
+  <button mat-raised-button color="primary" (click)="onSubmit()">Save</button>
+  <button mat-raised-button color="warn" (click)="onCancelClick()">Cancel</button>
+</mat-dialog-actions>
+
+
